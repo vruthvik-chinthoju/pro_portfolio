@@ -37,7 +37,7 @@ function HomePage() {
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/pro_portfolio"> 
 
       <Routes>
 
