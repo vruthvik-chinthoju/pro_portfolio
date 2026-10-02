@@ -18,7 +18,11 @@ export default function Navbar() {
   return (
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="log">
-        <img src={vrImg} alt="" className="vr" />
+        <img
+          src={`${import.meta.env.BASE_URL}images/vr.png`}
+          alt=""
+          className="vr"
+        />
         <h1 className="logo">Ruthvik</h1>
       </div>
 
