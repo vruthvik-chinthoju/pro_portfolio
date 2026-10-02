@@ -10,43 +10,45 @@ export default function Proof() {
 
   const sections = [
     {
-      title: "Training & Development",
-      desc: "Completed Python Full Stack Development training with hands-on experience in backend, frontend, and real-world workflows.",
-      images: ["/proof_hub/Qpiders.jpeg", "/proof_hub/spider.png"]
-    },
-    {
-      title: "Google Agentathon",
-      desc: "Participated in Google Agentathon, building AI-driven solutions with a team under time constraints.",
-      images: [
-        "/proof_hub/agentathon-certificate.png",
-        "/proof_hub/robotimg.jpeg",
-        "/proof_hub/handle.jpeg"
-      ]
-    },
-    {
-      title: "Creative & Photography",
-      desc: "Content creator and photographer focusing on storytelling, visuals, and audience engagement.",
-      link: "https://www.instagram.com/beyond_worldzzz",
-      images: [
-        "/proof_hub/beyond(2).jpeg",
-        "/proof_hub/beyond(1).jpeg",
-        "/proof_hub/beyond.jpeg"
-      ],
-      large: [
-        "/proof_hub/IMG20250622173603.jpg",
-        "/proof_hub/IMG20250503181150.jpg",
-        "/proof_hub/IMG20250727203509.jpg",
-        "/proof_hub/IMG20220901061814.jpg",
-        "/proof_hub/IMG20220621171815.jpg",
-        "/proof_hub/IMG20230824184418.jpg",
-        "/proof_hub/IMG20240120103038.jpg",
-        "/proof_hub/sunset.jpeg",
-        "/proof_hub/mantis_1.jpeg",
-        "/proof_hub/mantis_2.jpeg"
-
-      ]
-    }
-  ];
+  title: "Training & Development",
+  desc: "Completed Python Full Stack Development training with hands-on experience in backend, frontend, and real-world workflows.",
+  images: [
+    `${import.meta.env.BASE_URL}proof_hub/Qpiders.jpeg`,
+    `${import.meta.env.BASE_URL}proof_hub/spider.png`
+  ]
+},
+{
+  title: "Google Agentathon",
+  desc: "Participated in Google Agentathon, building AI-driven solutions with a team under time constraints.",
+  images: [
+    `${import.meta.env.BASE_URL}proof_hub/agentathon-certificate.png`,
+    `${import.meta.env.BASE_URL}proof_hub/robotimg.jpeg`,
+    `${import.meta.env.BASE_URL}proof_hub/handle.jpeg`
+  ]
+},
+{
+  title: "Creative & Photography",
+  desc: "Content creator and photographer focusing on storytelling, visuals, and audience engagement.",
+  link: "https://www.instagram.com/beyond_worldzzz",
+  images: [
+    `${import.meta.env.BASE_URL}proof_hub/beyond(2).jpeg`,
+    `${import.meta.env.BASE_URL}proof_hub/beyond(1).jpeg`,
+    `${import.meta.env.BASE_URL}proof_hub/beyond.jpeg`
+  ],
+  large: [
+    `${import.meta.env.BASE_URL}proof_hub/IMG20250622173603.jpg`,
+    `${import.meta.env.BASE_URL}proof_hub/IMG20250503181150.jpg`,
+    `${import.meta.env.BASE_URL}proof_hub/IMG20250727203509.jpg`,
+    `${import.meta.env.BASE_URL}proof_hub/IMG20220901061814.jpg`,
+    `${import.meta.env.BASE_URL}proof_hub/IMG20220621171815.jpg`,
+    `${import.meta.env.BASE_URL}proof_hub/IMG20230824184418.jpg`,
+    `${import.meta.env.BASE_URL}proof_hub/IMG20240120103038.jpg`,
+    `${import.meta.env.BASE_URL}proof_hub/sunset.jpeg`,
+    `${import.meta.env.BASE_URL}proof_hub/mantis_1.jpeg`,
+    `${import.meta.env.BASE_URL}proof_hub/mantis_2.jpeg`
+  ]
+}
+  ]
 
   return (
     <section className="proof-container" id="proof">

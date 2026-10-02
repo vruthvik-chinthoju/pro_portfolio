@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "./css/Navbar.css"
+import vrImg from "../assets/images/vr.png";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -17,7 +18,7 @@ export default function Navbar() {
   return (
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="log">
-        <img src="/images/vr.png" alt="" className="vr" />
+        <img src={vrImg} alt="" className="vr" />
         <h1 className="logo">Ruthvik</h1>
       </div>
 
