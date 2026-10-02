@@ -1,0 +1,159 @@
+:root {
+  --bg: #F5EFE6;
+  --primary: #3B2A1F;
+  --accent: #C47A2C;
+  --text: #7A5C45;
+  --border: rgba(0,0,0,0.08);
+}
+
+
+.skills {
+  padding: 100px 10%;
+  background: #F5EFE6;
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid #7A5C45;
+}
+
+
+.skills::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(196,122,44,0.2), transparent 70%);
+  top: -100px;
+  right: -100px;
+  filter: blur(80px);
+}
+
+
+.skills-header {
+  margin-bottom: 70px;
+}
+
+.skills-tag {
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  color: var(--accent);
+}
+
+.skills-header h2 {
+  font-size: 3rem;
+  color: var(--primary);
+}
+
+.skills-header h2 i{
+  color: #C47A2C;
+}
+.skills-header h2 span {
+  color: var(--accent);
+}
+
+.small {
+  width: 400px;
+}
+
+.skills-sub {
+  margin-top: 15px;
+  color: var(--text);
+}
+
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+}
+
+
+.skill-card {
+  background: #d6b49a;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #7A5C45;
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 50px rgba(201, 87, 35, 0.1);
+  border: 1px solid #C47A2C;
+}
+
+.skill-card .icon {
+  padding-top: 20px;
+  padding-left: 10px;
+  width:28px;
+  height: 28px;
+  color: var(--accent);
+  margin-bottom: 14px;
+}
+
+.skill-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  color: var(--primary);
+}
+
+
+.tags {
+  margin-top: 12px;
+}
+
+
+.skill-card .tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  padding: 6px 12px;
+  margin: 5px;
+
+  font-size: 12px;
+  border-radius: 4px;
+
+  background: #f7ede6;
+  color: #7A5C45;
+
+  transition: 0.25s;
+  border: 1px solid #aa907c;
+}
+
+/* ICON INSIDE TAG */
+.tag img {
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+}
+
+/* hover */
+.tag:hover {
+  background: var(--accent);
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .skills {
+    padding: 70px 20px;
+  }
+
+  .small {
+    width: 100%;
+  }
+
+  .skills-header h2 {
+    font-size: 2.2rem;
+  }
+  .skill-card h3{
+    margin-left: 8px;
+    font-size: 16px;
+  }
+  .skill-card .tag{
+    font-size: 10px;
+  }
+}

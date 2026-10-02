@@ -1,0 +1,228 @@
+.browser-card {
+  width: 100%;
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border-radius: 2px;
+
+  border: 1px solid rgba(0, 0, 0, 0.08);
+
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.10),
+    0 8px 25px rgba(0, 0, 0, 0.05);
+
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.browser-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 35px 75px rgba(0, 0, 0, 0.14),
+    0 12px 30px rgba(0, 0, 0, 0.07);
+}
+
+
+/* =========================
+   BROWSER HEADER
+========================= */
+
+.browser-header {
+  height: 62px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 20px;
+
+  background: #fafafa;
+
+  border-bottom: 1px solid grey;
+
+  position: relative;
+  
+}
+
+
+/* =========================
+   WINDOW DOTS
+========================= */
+
+.browser-dots {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+
+  width: 90px;
+}
+
+.browser-dot {
+  width: 12px;
+  height: 12px;
+
+  border-radius: 50%;
+}
+
+.browser-dot.red {
+  background: #ff5f57;
+}
+
+.browser-dot.yellow {
+  background: #ffbd2e;
+}
+
+.browser-dot.green {
+  background: #28c840;
+}
+
+
+/* =========================
+   URL BAR
+========================= */
+
+.browser-url {
+  position: absolute;
+
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 55%;
+
+  height: 38px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  background: #eeeeee;
+
+  border-radius: 20px;
+
+  color: #666;
+
+  font-size: 13px;
+  font-weight: 500;
+
+  white-space: nowrap;
+}
+
+.browser-lock {
+  font-size: 11px;
+}
+
+
+/* =========================
+   THREE DOT MENU
+========================= */
+
+.browser-more {
+  margin-left: auto;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 3px;
+
+  padding: 5px;
+}
+
+.browser-more span {
+  width: 4px;
+  height: 4px;
+
+  border-radius: 50%;
+
+  background: #555;
+}
+
+
+/* =========================
+   PROJECT IMAGE
+========================= */
+
+.browser-screen {
+  width: 100%;
+
+  overflow: hidden;
+
+  background: #fff;
+}
+
+.browser-screen img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  object-fit: cover;
+}
+.browser-url {
+    flex: 1;
+    min-width: 0;
+
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    padding: 6px 12px;
+
+    background: #f5f5f5;
+    border-radius: 6px;
+
+    font-size: 11px;
+    color: #555;
+
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.browser-url span:last-child {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .browser-card {
+    border-radius: 0px;
+  }
+
+  .browser-header {
+    height: 48px;
+    padding: 0 14px;
+  }
+
+  .browser-dots {
+    width: 60px;
+    gap: 5px;
+  }
+
+  .browser-dot {
+    width: 9px;
+    height: 9px;
+  }
+
+  .browser-url {
+    width: 48%;
+
+    height: 30px;
+
+    font-size: 9px;
+  }
+
+  .browser-more span {
+    width: 3px;
+    height: 3px;
+  }
+}

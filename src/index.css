@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+:root {
+  --bg: #F5EFE6;
+  --primary: #3B2A1F;
+  --accent: #C47A2C;
+  --text: #7A5C45;
+  --grid: #E6DED3;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Poppins';
+  background-color:var(--bg);
+  color: black;
+  overflow-x: hidden;
+}
+
+
+body.scrolling * {
+  animation: none !important;
+  transition: none !important;
+}
+
+
+body.scrolling .hero-image img {
+  animation: none !important;
+}
+
+body.scrolling .btn {
+  transition: none !important;
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section {
+  max-width: 1100px;
+  margin: auto;
+}
+/* =========================
+   SCROLLBAR
+========================= */
+
+::-webkit-scrollbar{
+  width:10px;
+}
+
+::-webkit-scrollbar-track{
+  background:#8d5c3d;
+}
+
+::-webkit-scrollbar-thumb{
+  background:#3B2A1F;
+  border-radius:20px;
+  border:2px solid #8d5c3d;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background:#24170f;
+}
+
+/* FIREFOX */
+
+*{
+  scrollbar-width:thin;
+  scrollbar-color:#3B2A1F #f0b590;
+}
+
+@media screen and (max-width:100px){
+  body{
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  
+}

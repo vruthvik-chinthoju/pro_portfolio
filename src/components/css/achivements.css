@@ -1,0 +1,192 @@
+:root {
+  --bg: #dfd0b7;
+  --card: #f7f1e7;
+  --primary: #3B2A1F;
+  --accent: #C47A2C;
+  --text: #7A5C45;
+  --border: #e6ded3;
+}
+
+/* ===== SECTION ===== */
+.ach-section {
+  position: relative;
+  overflow:hidden;
+  z-index: 2;
+  padding: 80px 10%;
+  background: #8d6445;
+  color: var(--primary);
+}
+
+/* ===== HEADER ===== */
+.ach-header p {
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  color: wheat;
+}
+
+.ach-header h2 {
+  font-size: 3rem;
+  margin: 10px 0 60px;
+  line-height: 1.2;
+  color: black;
+}
+.ach-header i{
+  color:burlywood;
+}
+
+.ach-header span {
+  color: orange;
+}
+
+/* ===== LAYOUT ===== */
+.ach-journey {
+  display: flex;
+  gap: 50px;
+  align-items: flex-start;
+}
+
+/* ===== LINE ===== */
+.ach-line {
+  width: 2px;
+  min-height: 100%;
+  background:black;
+  box-shadow: 0 0 10px rgba(196, 122, 44, 0.4);
+}
+
+/* ===== CONTENT ===== */
+.ach-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+/* ===== CARD ===== */
+.ach-card {
+  background: var(--card);
+  padding: 25px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  transition: all 0.3s ease;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+.ach-card a{
+  color: rgb(224, 90, 42);
+  cursor: pointer;
+}
+
+/* hover glow */
+.ach-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  background: radial-gradient(circle at top left, wheat transparent 60%);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+.ach-card:hover::after {
+  opacity: 1;
+}
+
+/* hover lift */
+.ach-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* timeline dot */
+.ach-card::before {
+  content: "";
+  position: absolute;
+  left: -47px;
+  top: 25px;
+  width: 12px;
+  height: 12px;
+  background: wheat;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(196,122,44,0.6);
+}
+
+/* ===== FEATURE CARD ===== */
+.ach-highlight {
+  border: 1px solid var(--accent);
+  background: linear-gradient(135deg, #f7f1e7, #efe4d2);
+}
+
+/* ===== TEXT ===== */
+.ach-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.ach-card p {
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* ===== YEAR ===== */
+.ach-year {
+  font-size: 0.8rem;
+  color: var(--accent);
+}
+
+/* ===== LABEL ===== */
+.ach-label {
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  color: var(--accent);
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+/* ===== TAGS ===== */
+.ach-tags {
+  margin-top: 15px;
+}
+
+.ach-tags span {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-right: 8px;
+  font-size: 12px;
+  border-radius: 8px;
+  background: #ead8c0;
+  transition: 0.2s;
+}
+
+.ach-tags span:hover {
+  background: var(--accent);
+  color: white;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .ach-journey {
+    flex-direction: column;
+  }
+
+  .ach-line {
+    display: none;
+  }
+
+  .ach-card::before {
+    display: none;
+  }
+
+  .ach-header h2 {
+    font-size: 2.2rem;
+  }
+  .ach-card::after{
+    display: none;
+  }
+  .ach-card p{
+    font-size: 14px;
+  }
+
+  .ach-section {
+    padding: 70px 20px;
+  }
+}

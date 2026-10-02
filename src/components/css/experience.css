@@ -1,0 +1,193 @@
+:root {
+  --bg: #F5EFE6;
+  --primary: #3B2A1F;
+  --accent: #C47A2C;
+  --text: #7A5C45;
+  --soft: #e9dcc7;
+}
+
+/* SECTION */
+.experience {
+  padding: 100px 10%;
+  background: #dfd0b7;
+  color: var(--primary);
+}
+
+/* HEADER */
+.exp-header {
+  margin-bottom: 70px;
+}
+
+.exp-tag {
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+
+.exp-header h2 {
+  font-size: 3rem;
+  line-height: 1.2;
+  font-family: "Poppins", sans-serif;
+}
+.exp-header i{
+  color: #C47A2C;
+}
+.exp-header span {
+  color: var(--accent);
+}
+
+/* TIMELINE */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+/* ITEM */
+.timeline-item {
+  display: flex;
+  gap: 40px;
+  padding: 30px;
+  background: #f7f1e7;
+  border-radius: 5px;
+  border: 1px solid #C47A2C;
+  transition: 0.3s ease;
+}
+
+/* HOVER */
+.timeline-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+}
+
+/* LEFT */
+.timeline-left {
+  width: 170px;
+  padding-right: 20px;
+  border-right: 2px solid #d6c3a3;
+}
+.timeline-left img{
+  height: 80px;
+  border-radius: 50%;
+}
+
+.date {
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.company {
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+.badge {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 10px;
+  background: var(--soft);
+  font-size: 12px;
+  border-radius: 6px;
+}
+
+/* RIGHT */
+.timeline-right {
+  flex: 1;
+}
+
+.timeline-right h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.timeline-right p {
+  color: var(--text);
+  line-height: 1.6;
+  margin-bottom: 15px;
+  max-width: 600px;
+}
+
+/* TAGS */
+.tags {
+  margin-top: 10px;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  margin: 5px 6px 0 0;
+  padding: 6px 12px;
+
+  font-size: 12px;
+  /* border-radius: 6px; */
+
+  background: #efe4d2;
+  color: var(--primary);
+
+  transition: 0.25s ease;
+  border: 1px solid #e0b898;
+}
+
+.tags .tag{
+  border-radius: 0px;
+}
+.tag img {
+  width: 14px;
+  height: 14px;
+  object-fit: contain;
+  margin-top: 1px;
+}
+
+/* HOVER */
+.tag:hover {
+  background: var(--accent);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.timeline-item {
+  margin: 0px;
+  margin-top: 30px;
+}
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .experience {
+    padding: 70px 20px;
+  }
+  .timeline{
+    display: flex;
+    gap: 50px;
+  }
+
+  .timeline-item {
+    flex-direction: column;
+    gap: 10px;
+    margin: 0px;
+  }
+
+  .timeline-left {
+    width: 100%;
+    border-right: none;
+    padding: 0;
+  }
+  .timeline h3{
+    font-size: 18px;
+  }
+  .timeline p{
+    font-size: 14px;
+  }
+  .timeline-left .company{
+    font-size: 18px;
+  }
+  .timeline-left img{
+    height: 60px;
+  }
+
+  .exp-header h2 {
+    font-size: 2.2rem;
+  }
+}
