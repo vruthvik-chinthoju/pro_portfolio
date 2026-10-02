@@ -19,7 +19,7 @@ export default function Navbar() {
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <div className="log">
         <img
-          src="/pro_portfolio/images/vr.png"
+          src={vrImg}
           alt=""
           className="vr"
         />

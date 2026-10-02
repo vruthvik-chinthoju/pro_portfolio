@@ -1,7 +1,8 @@
 import "./css/About.css"
 import { Code, Server, Brain, Users } from "lucide-react"
 import profile from "/DSC00076.JPG"
-import sunpic from "/proof_hub/IMG-20250830-WA0021.jpg"
+// import sunpic from "/proof_hub/IMG-20250830-WA0021.jpg"
+import sunpic from "../assets/proof_hub/IMG-20250830-WA0021.jpg";
 
 export default function About() {
   return (
